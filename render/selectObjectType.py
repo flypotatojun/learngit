@@ -74,7 +74,8 @@ def select_type():
         cmds.select(baseLatt)
         cmds.pickWalk(d="up")
         
-    if options == "cluster":
+import maya.cmds as cmds
+if options == "cluster":
         cmds.select(CLU)
         cmds.pickWalk(d="up")
 

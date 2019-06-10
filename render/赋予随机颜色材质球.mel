@@ -1,11 +1,12 @@
+#encoding: utf-8
 string $sel[] = `ls- sl`;
 if(!size($sel))
 {
-    confirmDialog -title "" -message "ÇëÏÈÑ¡ÔñÎïÌå"    -button "È·¶¨"    -defaultButton "È·¶¨"    -cancelButton "È·¶¨"     -dismissString "È·¶¨" ;	
+    confirmDialog -title "" -message "ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"    -button "È·ï¿½ï¿½"    -defaultButton "È·ï¿½ï¿½"    -cancelButton "È·ï¿½ï¿½"     -dismissString "È·ï¿½ï¿½" ;	
 }
 else
 {//else start
-string $confirmIt = `confirmDialog -title "Confirm" -message "È·ÈÏ¸³ÓèËæ»úÑÕÉ«?"    -button "Yes"    -button "No"     -defaultButton "Yes"    -cancelButton "No"     -dismissString "No"`;
+string $confirmIt = `confirmDialog -title "Confirm" -message "È·ï¿½Ï¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«?"    -button "Yes"    -button "No"     -defaultButton "Yes"    -cancelButton "No"     -dismissString "No"`;
 if($confirmIt == "Yes")
 {
 for($each in $sel)
